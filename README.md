@@ -12,7 +12,7 @@ This is an iOS application, created in response to a question on Stack Overflow,
 
 `ViewController` - This is a `UITableView` subclass for the main view, the list of categories. This class parses the XML, and presents the list of categories. For how to retrieve the category names, take a look at the `UITableViewDataSource` delegate methods in this class. For information on how to pass the category dictionary entry to the `DetailViewController`, look at the `prepareForSegue` method.
 
-`StoogeViewController` and `MarxViewController - These are two table view controllers that simply show a static list of values. When you select a value, it will update two text fields in the `ViewController`.
+`StoogeViewController` and `MarxViewController` - These are two child view controllers presented on `ViewController`. These are table view controllers that simply show a static list of values. When you select a value, it will update two text fields in the parent controller, `ViewController`.
 
 ## Notes
 
