@@ -14,7 +14,7 @@ This has been changed so that when you click on a value from a child view contro
 
 `ViewController` - This is a the container view controller, which has (a) a container subview with a couple of `UILabel` fields; (b) a segmented control for picking between two child controllers; and (c) a container subview for showing of the child view controller's view. When you change the segmented control, this will animate the changing of the child view.
 
-`ChildViewController - This is table view controllers that is intended to be a child controller used by the container view controller, `ViewController`. It simply show a static list of values. The app actually doesn't use this directly, but rather the following two view controllers use it. I've just moved the common code from the following two controllers, to avoid unnecessary repetition of code.
+`ChildViewController` - This is table view controllers that is intended to be a child controller used by the container view controller, `ViewController`. It simply show a static list of values. The app actually doesn't use this directly, but rather the following two view controllers use it. I've just moved the common code from the following two controllers, to avoid unnecessary repetition of code.
 
 `StoogeViewController` and `MarxViewController` - These are two child view controllers, subclassed from `ChildViewController`, are presented as child controllers from the `ViewController` custom container view controller.
 
