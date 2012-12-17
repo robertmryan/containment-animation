@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		831AE547167FB27600F62010 /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 831AE546167FB27600F62010 /* ChildViewController.m */; };
 		8354E7B3167ED49E00A0C12A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8354E7B2167ED49E00A0C12A /* UIKit.framework */; };
 		8354E7B5167ED49E00A0C12A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8354E7B4167ED49E00A0C12A /* Foundation.framework */; };
 		8354E7B7167ED49E00A0C12A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8354E7B6167ED49E00A0C12A /* CoreGraphics.framework */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		831AE545167FB27600F62010 /* ChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController.h; sourceTree = "<group>"; };
+		831AE546167FB27600F62010 /* ChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController.m; sourceTree = "<group>"; };
 		8354E7AE167ED49E00A0C12A /* Containment Animation Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Containment Animation Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8354E7B2167ED49E00A0C12A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8354E7B4167ED49E00A0C12A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -126,6 +129,8 @@
 		8354E7D9167ED4CC00A0C12A /* Container child controllers */ = {
 			isa = PBXGroup;
 			children = (
+				831AE545167FB27600F62010 /* ChildViewController.h */,
+				831AE546167FB27600F62010 /* ChildViewController.m */,
 				8354E7D5167ED4B700A0C12A /* MarxViewController.h */,
 				8354E7D6167ED4B700A0C12A /* MarxViewController.m */,
 				8354E7D7167ED4B700A0C12A /* StoogeViewController.h */,
@@ -216,6 +221,7 @@
 				8354E7BF167ED49E00A0C12A /* main.m in Sources */,
 				8354E7C3167ED49E00A0C12A /* AppDelegate.m in Sources */,
 				8354E7CF167ED49E00A0C12A /* ViewController.m in Sources */,
+				831AE547167FB27600F62010 /* ChildViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +338,7 @@
 				8354E7D4167ED49E00A0C12A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -20,4 +20,6 @@
 
 - (IBAction)changedSegmentedControl:(id)sender;
 
+- (void)swapChild;
+
 @end

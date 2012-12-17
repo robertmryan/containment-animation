@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StoogeViewController : UITableViewController
+#import "ChildViewController.h"
+
+@interface StoogeViewController : ChildViewController
 
 @end

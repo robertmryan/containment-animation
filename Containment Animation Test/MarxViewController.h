@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MarxViewController : UITableViewController
+#import "ChildViewController.h"
+
+@interface MarxViewController : ChildViewController
+
 
 @end

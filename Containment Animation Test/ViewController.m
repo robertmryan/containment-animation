@@ -11,6 +11,7 @@
 
 @interface ViewController ()
 
+@property (nonatomic) NSInteger currentController;
 @end
 
 @implementation ViewController
@@ -19,6 +20,8 @@
 {
     [super viewDidLoad];
 	
+    self.currentController = 0;
+    
     self.bottomContainerView.layer.borderColor = [UIColor blackColor].CGColor;
     self.bottomContainerView.layer.borderWidth = 1.0;
     
@@ -48,6 +51,8 @@
     UIViewController *oldController = [self.childViewControllers lastObject];
     UIViewController *newController;
     
+    self.currentController = self.segmentedControl.selectedSegmentIndex;
+    
     if (self.segmentedControl.selectedSegmentIndex == 0)
         newController = [self.storyboard instantiateViewControllerWithIdentifier:@"Stooge"];
     else
@@ -67,7 +72,7 @@
     
     [self transitionFromViewController:oldController
                       toViewController:newController
-                              duration:0.5
+                              duration:1.0
                                options:0
                             animations:^{
                                 newController.view.frame = self.bottomContainerView.bounds;
@@ -77,6 +82,24 @@
                                 [newController didMoveToParentViewController:self];
                             }];
     
+}
+
+- (void)swapChild
+{
+    // I don't need to animate the changing of the switch, but if we're showing simultaneous animations, why not
+    
+    [UIView transitionWithView:self.segmentedControl
+                      duration:1.0
+                       options:UIViewAnimationOptionTransitionCrossDissolve
+                    animations:^{
+                        if (self.currentController == 0)
+                            [self.segmentedControl setSelectedSegmentIndex:1];
+                        else
+                            [self.segmentedControl setSelectedSegmentIndex:0];
+                    }
+                    completion:nil];
+    
+    [self changedChild];
 }
 
 - (IBAction)changedSegmentedControl:(id)sender
